@@ -21,8 +21,8 @@ function colorCode(array $colors): int {
 
     $colorCode = "";
     
-    $colorCode[0] = $resistorColors[$colors[0]];
-    $colorCode[1] = $resistorColors[$colors[1]];
+    $colorCode = $resistorColors[$colors[0]];
+    $colorCode .= $resistorColors[$colors[1]];
     for($i = 0; $i < $resistorColors[$colors[2]]; $i++) {
         $colorCode *= 10;
     }
